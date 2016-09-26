@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+repositories {
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+  testCompile 'org:hamcrest-core:1.3'
+}
